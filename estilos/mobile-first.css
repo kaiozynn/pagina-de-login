@@ -1,64 +1,95 @@
 @charset "UTF-8";
 
-* {
+/*
+    lilas #5f2c82
+*/
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;  /* Preferred icon size */
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 }
 
 body, html {
-    width: 100vw;
-    height: 100vh;
     background-color: #5f2c82;
-}
-
-main {
     width: 100vw;
     height: 100vh;
-}
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 
-section {
-    padding-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
 }
 
 #login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
+    width: 300px;
     background-color: white;
+    border-radius: 20px;
     overflow: hidden;
+    text-align: justify;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 #image {
     width: 100%;
+    height: 250px;
+    background: #5f2c82 url(../imagens/imagen-para-login.avif) no-repeat;
+    background-size: cover;
 }
 
-#image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-
+#formulario {
+    padding: 5px 10px;
 }
 
-#formulario p {
-    text-align: justify;
-    padding: 5px 15px;
-}
-
-#formulario > h1 {
+#formulario h1 {
     text-align: center;
 }
 
 form {
     display: flex;
-    margin: auto;
-    width: 200px;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+form div {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding-top: 10px;
+}
+
+form i {
+    padding-right: 5px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+    font-weight: bold;
+    margin: auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(102, 202, 169);
 }

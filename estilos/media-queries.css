@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@media screen and (min-width:600px){  
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+body, html {
+    background-image: linear-gradient(to right top, #5f2c82, aquamarine);
+}
+
+#login {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 30px;
+    display: flex;
+    padding-bottom: 0;
+}
+
+#login h1 {
+    padding: 10px 0;
+}
+
+#login p {
+    padding: 10px;
+}
+
+#image {
+    height: 100%;
+    width: 200%;
+    background-position: center center;
+}
+
+form {
+    width: 100%;
+    flex-direction: column;
+}
+
+form input[type="email"], input[type="password"] {
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: rgb(201, 201, 201);
+    font-size: 20px;
+    padding: 5px;
+}
+
+form input[type="email"]:focus {
+    transition: 0.3s;
+    background-color: rgb(211, 255, 255);
+}
+
+form input[type="password"]:focus {
+    transition: 0.3s;
+    background-color: rgb(211, 255, 255);
+}
+
+form input[type="submit"] {
+    font-size: 1em;
+    width: 120px;
+    height: 40px;
+}
+
+.material-symbols-outlined {
+    font-size: 50px;
+}
+
+}

@@ -7,27 +7,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/mobile-first.css">
-
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <style>
+    @media screen and (min-width:600px){
+    form > label > i {
+        width: 50px;
+        font-size: 70px;
+    }
+}
+    </style>
     <title>Login</title>
 </head>
 <body>
     <main>
         <section id="login">
             <div id="image">
-                <img src="imagens/imagen-para-login.avif" alt="imagem login">
+
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.php" method="post">
-                    <label for="mail">
-                        <i class="material-symbols-outlined">mail</i>
-                    </label>
-                    <input type="email" name="mail" id="mail">
-                    <label for="pass">
-                        <i class="material-symbols-outlined">key</i>
-                    </label>
-                    <input type="password" name="pass" id="pass">
+                    <div>
+                        <label for="mail">
+                            <i class="material-symbols-outlined">mail</i>
+                        </label>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+                    <div>
+                        <label for="pass">
+                            <i class="material-symbols-outlined">key</i>
+                        </label>
+                        <input type="password" name="pass" id="pass" required autocomplete="off">
+                    </div>
+                    <input type="submit" value="Logar">
                 </form>
             </div>
         </section>
