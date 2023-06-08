@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width:600px){  
+@media screen and (min-width:600px) and (min-width: 768px){  
 
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
@@ -21,13 +21,12 @@ body, html {
 }
 
 #login {
-    width: 700px;
+    width: 90%;
     height: 500px;
     padding-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin: auto ;
+    transition: width .3s, height .3s;
 }
 
 #login p {
@@ -51,9 +50,13 @@ form {
     flex-direction: column;
 }
 
+form i {
+    margin-left: -20px;
+}
+
 form input[type="email"], input[type="password"] {
     height: 30px;
-    width: 200px;
+    width: 250px;
     border: none;
     background-color: rgb(201, 201, 201);
     font-size: 20px;
@@ -80,4 +83,100 @@ form input[type="submit"] {
     font-size: 40px;
 }
 
+}
+
+@media screen and (min-width:992px){
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+body, html {
+    background-image: linear-gradient(to right top, #5f2c82, aquamarine);
+}
+
+#login {
+    width: 80%;
+    height: 500px;
+    padding-bottom: 0;
+    display: block;
+    margin: auto ;
+    transition: width .3s, height .3s;
+}
+
+#login p {
+    padding: 10px;
+}
+
+#image {
+    float: right;
+    height: 100%;
+    width: 50%;
+    background-position: center center;
+}
+
+#formulario {
+    width: 50%;
+    float: left;
+}
+
+form {
+    width: 100%;
+    flex-direction: column;
+}
+
+form i {
+    margin-left: -10px;
+}
+
+form input[type="email"], input[type="password"] {
+    height: 30px;
+    width: 250px;
+    border: none;
+    background-color: rgb(201, 201, 201);
+    font-size: 20px;
+    padding: 5px;
+}
+
+form input[type="email"]:focus {
+    transition: 0.3s;
+    background-color: rgb(211, 255, 255);
+}
+
+form input[type="password"]:focus {
+    transition: 0.3s;
+    background-color: rgb(211, 255, 255);
+}
+
+form input[type="submit"] {
+    font-size: 1em;
+    width: 120px;
+    height: 40px;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+}
+
+}
+
+@media screen and (min-width: 1050px) {
+#login {
+    width: 60%;
+    height: 500px;
+    padding-bottom: 0;
+    display: block;
+    margin: auto ;
+    transition: width .3s, height .3s;
+}
 }

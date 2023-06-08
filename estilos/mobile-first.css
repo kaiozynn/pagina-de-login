@@ -27,11 +27,7 @@ body, html {
     background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 #login {
@@ -42,12 +38,17 @@ body, html {
     text-align: justify;
     font-size: 20px;
     padding-bottom: 20px;
+    transition: width 0.3s, height .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #image {
     width: 100%;
     height: 250px;
-    background: #5f2c82 url(../imagens/imagen-para-login.avif) no-repeat;
+    background: #5f2c82 url(../imagens/imagen-para-login.avif) no-repeat center center;
     background-size: cover;
 }
 
@@ -77,6 +78,25 @@ form i {
     padding-right: 5px;
 }
 
+form input[type="email"], input[type="password"] {
+    height: 30px;
+    width: 160px;
+    border: none;
+    background-color: rgb(201, 201, 201);
+    font-size: 20px;
+    padding: 5px;
+}
+
+form input[type="email"]:focus {
+    transition: 0.3s;
+    background-color: rgb(211, 255, 255);
+}
+
+form input[type="password"]:focus {
+    transition: 0.3s;
+    background-color: rgb(211, 255, 255);
+}
+
 form input[type="submit"] {
     display: block;
     width: 90px;
@@ -88,6 +108,7 @@ form input[type="submit"] {
     background-color: aquamarine;
     font-weight: bold;
     margin: auto;
+    margin-top: 5px;
 }
 
 form input[type="submit"]:hover {
