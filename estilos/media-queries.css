@@ -64,13 +64,13 @@ form input[type="email"], input[type="password"] {
 }
 
 form input[type="email"]:focus {
-    transition: 0.3s;
     background-color: rgb(211, 255, 255);
+    transition: 0.3s;
 }
 
 form input[type="password"]:focus {
-    transition: 0.3s;
     background-color: rgb(211, 255, 255);
+    transition: 0.3s;
 }
 
 form input[type="submit"] {
@@ -149,13 +149,13 @@ form input[type="email"], input[type="password"] {
 }
 
 form input[type="email"]:focus {
-    transition: 0.3s;
     background-color: rgb(211, 255, 255);
+    transition: 0.3s;
 }
 
 form input[type="password"]:focus {
-    transition: 0.3s;
     background-color: rgb(211, 255, 255);
+    transition: 0.3s;
 }
 
 form input[type="submit"] {

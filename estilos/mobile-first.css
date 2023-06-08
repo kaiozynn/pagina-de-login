@@ -38,11 +38,11 @@ body, html {
     text-align: justify;
     font-size: 20px;
     padding-bottom: 20px;
-    transition: width 0.3s, height .3s;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: width 0.3s, height .3s;
 }
 
 #image {
@@ -88,13 +88,13 @@ form input[type="email"], input[type="password"] {
 }
 
 form input[type="email"]:focus {
-    transition: 0.3s;
     background-color: rgb(211, 255, 255);
+    transition: 0.3s;
 }
 
 form input[type="password"]:focus {
-    transition: 0.3s;
     background-color: rgb(211, 255, 255);
+    transition: 0.3s;
 }
 
 form input[type="submit"] {
